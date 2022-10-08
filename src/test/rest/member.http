@@ -1,0 +1,31 @@
+### 사용자 저장
+POST http://localhost:8080/member
+Content-Type: application/json
+
+{
+  "name": "Teddy",
+  "age": 40
+}
+
+### 사용자 조회
+GET http://localhost:8080/member/1
+
+
+### 전체 사용자 조회
+GET http://localhost:8080/member/all
+
+### 사용자 나이 수정
+PATCH http://localhost:8080/member/1
+Content-Type: application/json
+
+{
+  "age": 41
+}
+
+### 사용자 이름 수정
+PATCH http://localhost:8080/member/1
+Content-Type: application/json
+
+{
+  "name" : "Teddy Kim"
+}
